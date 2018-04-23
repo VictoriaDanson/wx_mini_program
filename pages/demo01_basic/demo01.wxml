@@ -1,0 +1,28 @@
+<!--该案例主要涉及：循环、选择、多重选择、按钮单击事件  -->
+<text>{{num}}</text>
+
+<view>{{list[0]}}</view>
+<view>{{list[1]}}</view>
+<view>{{list[2]}}</view>
+
+<view wx:for="{{list}}" wx:key="index">
+ {{item}}
+</view>
+
+<view wx:if="{{num > 5}}">
+  这是一个广告
+</view> 
+ 
+<view wx:if="{{answer == 'a'}}">A</view> 
+<view wx:elif="{{answer == 'b'}}">B</view> 
+<view wx:elif="{{answer == 'c'}}">C</view> 
+<view wx:elif="{{answer == 'd'}}">D</view> 
+<view wx:else>请输入正确的答案</view> 
+
+<!--type:primary 绿色 default灰色 warn 红色  -->
+<!--size:mini/default  -->
+<button type="primary" bindtap="handleClick">clickMe</button>
+<button size="mini"  type="warn"bindtap="handleClick">clickMe</button>
+<button size="mini"  type="warn"bindtap="handleClick">clickMe</button>
+<view wx:for="{{info}}">{{item}}</view>
+<button open-type='getUserInfo' bindgetuserinfo="getInfo">获取用户信息</button>

@@ -1,0 +1,3 @@
+<view wx:for="{{stuList}}" wx:if="{{item.score>60}}">
+  {{item.name+"  "+item.score}}
+</view>

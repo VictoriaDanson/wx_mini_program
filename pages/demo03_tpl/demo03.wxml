@@ -1,0 +1,10 @@
+<!--该案例包括模板的使用方式以及给模板内容传参  -->
+
+<import src="../../utils/list.wxml"/>
+
+<!-- <view>我是页头</view>  -->
+<include src="../../utils/header.wxml"/>
+
+<!--将demo03.js中定义的productList通过data属性传递给myList所对应的模板内容:注意，在模板内部 必须按照productList进行处理 否则就找不到  -->
+<template is="myList" data="{{productList}}"></template>  
+<view>我是页尾</view>

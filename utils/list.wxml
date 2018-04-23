@@ -1,0 +1,6 @@
+<!--模拟一个可被复用的模板，比如显示商品列表或者用户列表  -->
+ <template name="myList">
+    <view wx:for="{{productList}}" wx:key="{{index}}">
+      {{item.title}}
+    </view>
+</template>   

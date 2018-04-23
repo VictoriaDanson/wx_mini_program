@@ -1,0 +1,2 @@
+<!--pages/demo05_navigator/demo05_detail.wxml-->
+<view>{{"商品id是"+id}}</view>

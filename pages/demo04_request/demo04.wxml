@@ -1,0 +1,7 @@
+<!--该案例包括网络请求处理、上下拉刷新  -->
+
+<view wx:for="{{list}}">
+ {{item.id}}
+</view>
+
+<button bindtap="loadmore">加载更多</button>

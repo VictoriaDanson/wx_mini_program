@@ -1,0 +1,16 @@
+<!--该案例涉及：跳转、传参-->
+
+<button bindtap="jump">跳转到demo04</button>
+<button bindtap="jumpToDetail">
+  跳转到demo05_detail并传递参数
+</button>
+
+ <navigator url="../demo04_request/demo04" >
+  打开demo04
+</navigator>
+<navigator url="./demo05_detail?id=10" >
+  打开demo05_detail并传递参数
+</navigator>
+<navigator open-type='redirect' url="../demo04_request/demo04" >
+  在当前页面打开demo04
+</navigator>

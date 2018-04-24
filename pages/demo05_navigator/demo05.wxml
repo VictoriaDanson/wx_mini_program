@@ -14,3 +14,14 @@
 <navigator open-type='redirect' url="../demo04_request/demo04" >
   在当前页面打开demo04
 </navigator>
+
+<!-- 方式1：通过data属性 data-a="" 怎么接受：e.target.dataset.a -->
+<button wx:for="{{list}}" bindtap="showName" data-uname="{{item.name}}" wx:key="{{index}}">
+  {{item.name}}
+</button>
+
+<!-- 方式2：通过id属性 id="" 怎么接受：e.target.id -->
+<button wx:for="{{list}}" bindtap="showMyName" 
+id="{{index}}" wx:key="{{index}}">
+  {{item.name}}
+</button>

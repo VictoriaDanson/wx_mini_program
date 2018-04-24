@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/demo05_navigator/demo05",
     "pages/demo01_basic/demo01",
     "pages/demo10_media/demo10",
     "pages/demo09_forms/demo09",
     "pages/demo08_forms/demo08",
     "pages/demo07_components/demo07",
     "pages/demo06_flex/demo06",
-    "pages/demo05_navigator/demo05",
     "pages/demo04_request/demo04",
     "pages/demo03_tpl/demo03",
     "pages/demo02_lianxi/demo02",

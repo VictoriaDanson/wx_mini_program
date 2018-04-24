@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    list:[{id:1,name:'john'},{id:2,name:'root'},{id:3,name:'shaw'}]
   },
 
   /**
@@ -72,5 +72,13 @@ Page({
     wx.navigateTo({
       url: './demo05_detail?id=3',
     })
+  },
+  showMyName(e){
+    console.log(e);
+    console.log(this.data.list[e.target.id].name);
+  },
+  showName(e){
+    console.log(e);
+    console.log(e.target.dataset.uname);
   }
 })

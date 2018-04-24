@@ -8,14 +8,26 @@ Page({
     num:3,
     list:[100,200,300],
     answer:'f',
-    info:{}
+    info:{},
+    myCount:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    
+  },
+  read(){
+    var appInstance = getApp();
+    var nowCount = appInstance.globalData.count;
+    console.log(nowCount);
+  },
+  write(){
+    var appInstance = getApp();
+    var nowCount = appInstance.globalData.count;
+    nowCount++;
+    appInstance.globalData.count = nowCount
   },
 
   /**

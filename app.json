@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/demo01_basic/demo01",
     "pages/demo10_media/demo10",
     "pages/demo09_forms/demo09",
     "pages/demo08_forms/demo08",
@@ -9,7 +10,7 @@
     "pages/demo04_request/demo04",
     "pages/demo03_tpl/demo03",
     "pages/demo02_lianxi/demo02",
-    "pages/demo01_basic/demo01",
+    
     "pages/index/index",
     "pages/logs/logs",
     "pages/demo05_navigator/demo05_detail"
@@ -19,5 +20,17 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/demo01_basic/demo01",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/demo02_lianxi/demo02",
+        "text":"练习"
+      }
+    ]
   }
 }

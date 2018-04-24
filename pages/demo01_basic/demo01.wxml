@@ -26,3 +26,6 @@
 <button size="mini"  type="warn"bindtap="handleClick">clickMe</button>
 <view wx:for="{{info}}">{{item}}</view>
 <button open-type='getUserInfo' bindgetuserinfo="getInfo">获取用户信息</button>
+
+<button bindtap="read">读globalData</button>
+<button bindtap="write">写globalData</button>
